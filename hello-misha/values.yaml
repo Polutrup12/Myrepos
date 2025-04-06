@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: mishazyat123/misha-test
+  repository: mishazyat123/misha-test:1.0
   pullPolicy: IfNotPresent
   tag: "latest"
 
