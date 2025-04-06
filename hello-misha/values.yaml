@@ -24,7 +24,7 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-tls:
-   - hosts:
-       - hello-misha.best.domain.com
-     secretName: hello-misha-tls
+  tls:
+    - hosts:
+        - hello-misha.best.domain.com
+      secretName: hello-misha-tls
