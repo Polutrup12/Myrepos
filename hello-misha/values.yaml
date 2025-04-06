@@ -20,7 +20,7 @@ ingress:
   enabled: true
   annotations: {}
   hosts:
-    - host: hello-misha.yourdomain.com
+    - host: hello-misha.best.domain.com
       paths:
         - path: /
           pathType: ImplementationSpecific
