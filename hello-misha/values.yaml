@@ -18,7 +18,8 @@ serviceAccount:
 
 ingress:
   enabled: true
-  annotations: {}
+  annotations:
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
   hosts:
     - host: hello-misha.best.domain.com
       paths:
