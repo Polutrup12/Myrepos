@@ -29,4 +29,4 @@ ingress:
   tls:
     - hosts:
         - hello-misha.best.domain.com
-      secretName: hello-misha-tls  # Секрет с сертификатом и ключом
+      secretName: my-secret
