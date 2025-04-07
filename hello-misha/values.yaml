@@ -20,7 +20,6 @@ ingress:
   enabled: true
   annotations:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"   # Перенаправление HTTP на HTTPS
-    nginx.ingress.kubernetes.io/ssl-protocols: "TLSv1.2 TLSv1.3" # Задаём актуальные версии TLS
   hosts:
     - host: hello-misha.best.domain.com
       paths:
