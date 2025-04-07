@@ -25,7 +25,7 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-# tls:                   # Удаляем или комментируем TLS-блок, если не нужен HTTPS
-#   - hosts:
-#       - hello-misha.best.domain.com
-#     secretName: hello-misha-tls
+  tls:                   # Удаляем или комментируем TLS-блок, если не нужен HTTPS
+    - hosts:
+        - hello-misha.best.domain.com
+#      secretName: hello-misha-tls
