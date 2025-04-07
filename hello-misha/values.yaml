@@ -19,13 +19,14 @@ serviceAccount:
 ingress:
   enabled: true
   annotations:
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"   # Перенаправление HTTP на HTTPS
+    nginx.ingress.kubernetes.io/ssl-protocols: "TLSv1.2 TLSv1.3" # Задаём актуальные версии TLS
   hosts:
     - host: hello-misha.best.domain.com
       paths:
         - path: /
           pathType: ImplementationSpecific
-  tls:                   # Удаляем или комментируем TLS-блок, если не нужен HTTPS
+  tls:
     - hosts:
         - hello-misha.best.domain.com
-#      secretName: hello-misha-tls
+      secretName: hello-misha-tls  # Секрет с сертификатом и ключом
